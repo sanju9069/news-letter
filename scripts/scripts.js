@@ -20,7 +20,11 @@ function buildHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
-  if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+  if (
+    h1 &&
+    picture &&
+    h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING
+  ) {
     const section = document.createElement('div');
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
@@ -95,8 +99,8 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
+  // loadHeader(doc.querySelector('header'));
+  // loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.svg`);
@@ -122,3 +126,31 @@ async function loadPage() {
 }
 
 loadPage();
+
+// News Letter Template script
+const table = document.querySelectorAll('table');
+const img = table[0].querySelectorAll('img');
+const tablerow = table[0].childNodes[1].children;
+
+table.forEach((ele, idx) => {
+  ele.setAttribute('width', '100%');
+  ele.setAttribute('border', '0');
+  ele.setAttribute('cellspacing', '0');
+  ele.setAttribute('cellpadding', '0');
+});
+table[0].setAttribute('align', 'center');
+table[0].setAttribute('width', '680');
+table[0].setAttribute('bgColor', '#ecedef');
+
+[...tablerow].forEach((ele, idx) => {
+  ele.className = 'table-row' + (idx + 1);
+  ele.setAttribute('data-table-row', 'table-row' + (idx + 1));
+});
+
+img.forEach((ele, idx) => {
+  ele.setAttribute('height', 'auto');
+});
+img[0].setAttribute('width', '100%');
+img[4].setAttribute('width', '100%');
+img[img.length - 2].setAttribute('width', '228');
+img[img.length - 1].setAttribute('width', '230');
