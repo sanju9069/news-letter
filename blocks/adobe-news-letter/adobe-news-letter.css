@@ -125,3 +125,9 @@
   font-weight: normal;
   text-align: left;
 }
+
+.adobe-news-letter table .table-row9 > td,
+.adobe-news-letter table .table-row10 > td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
