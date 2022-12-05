@@ -1,0 +1,127 @@
+.adobe-news-letter table tr td {
+  color: #2c2c2c;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.adobe-news-letter table .table-row2 td {
+  padding-bottom: 15px;
+  font-weight: 600;
+  padding-left: 42px;
+}
+.adobe-news-letter table .table-row5 td,
+.adobe-news-letter table .table-row6 > td,
+.adobe-news-letter table .table-row7 > td {
+  padding-top: 20px;
+}
+.adobe-news-letter table .table-row3 td,
+.adobe-news-letter table .table-row5 td,
+.adobe-news-letter table .table-row6 > td,
+.adobe-news-letter table .table-row7 > td {
+  padding-bottom: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+.adobe-news-letter table .table-row7 > td {
+  padding-top: 0;
+}
+.adobe-news-letter table .table-row5 td {
+  padding-bottom: 0px;
+}
+.adobe-news-letter table .table-row1 td,
+.adobe-news-letter table .table-row2 td,
+.adobe-news-letter table .table-row3 td,
+.adobe-news-letter table .table-row5 td,
+.adobe-news-letter table .table-row6 > td,
+.adobe-news-letter table .table-row7 > td,
+.adobe-news-letter table .table-row8 > td {
+  background-color: #f5f5f5;
+}
+.adobe-news-letter table .table-row4 > td {
+  background-color: #db0f00;
+  padding-left: 42px;
+}
+.adobe-news-letter table .table-row4 td table tbody tr td:first-child {
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.adobe-news-letter
+  table
+  .table-row4
+  td
+  table
+  tbody
+  tr
+  td:first-child
+  p:last-child {
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.adobe-news-letter
+  table
+  > tbody
+  > tr.table-row4
+  > td
+  > table
+  > tbody
+  > tr
+  > td:nth-child(1) {
+  padding-right: 42px;
+}
+.adobe-news-letter
+  table
+  > tbody
+  > tr.table-row4
+  > td
+  > table
+  > tbody
+  > tr
+  > td:last-child {
+  width: 353px;
+}
+
+.adobe-news-letter table > tbody > tr.table-row6 > td > table > tbody > tr td {
+  border-right: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+  padding: 8px 10px;
+}
+.adobe-news-letter
+  table
+  > tbody
+  > tr.table-row6
+  > td
+  > table
+  > tbody
+  > tr:first-child
+  > td {
+  background-color: #bdbdbd;
+}
+.adobe-news-letter
+  table
+  > tbody
+  > tr.table-row6
+  > td
+  > table
+  > tbody
+  > tr
+  > td:first-child {
+  border-left: 1px solid #a8a8a8;
+}
+
+.adobe-news-letter table .table-row9 > td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.adobe-news-letter table .table-row9 > td img {
+  width: 140px;
+}
+
+.adobe-news-letter table .table-row10 > td {
+  color: #a1a1a1;
+  font-family: adobe-clean, Adobe Clean, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  text-align: left;
+}
